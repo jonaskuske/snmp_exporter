@@ -1025,7 +1025,7 @@ func TestRenderableIndexTypes(t *testing.T) {
 					t.Errorf("indexOidsAsString panicked for type %s: %v", typ, r)
 				}
 			}()
-			indexOidsAsString([]int{4, 1, 2, 3, 4, 5, 6, 7, 8}, typ, 0, false, nil)
+			indexOidsAsString([]int{4, 1, 2, 3, 4, 5, 6, 7, 8}, typ, "", 0, false, nil)
 		}()
 	}
 }
